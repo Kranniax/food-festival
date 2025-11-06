@@ -1,0 +1,23 @@
+{
+  "name": "food-festival",
+  "version": "1.0.0",
+  "description": "A simple front-end project for the UCF bootcamp: a mock food festival website demonstrating responsive layouts, DOM manipulation, and build tooling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.7.1"
+  }
+}
