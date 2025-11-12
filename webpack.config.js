@@ -1,12 +1,25 @@
 const path = require("path");
 const webpack = require("webpack");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
-  entry: "./assets/js/script.js",
+  entry: {
+    app: "./assets/js/script.js",
+    events: "./assets/js/events.js",
+    schedule: "./assets/js/schedule.js",
+    tickets: "./assets/js/tickets.js",
+  },
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "main.bundle.js",
+    path: __dirname + "/dist",
+    filename: "[name].bundle.js",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jpg$/i,
+      },
+    ],
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -14,8 +27,8 @@ module.exports = {
       jQuery: "jquery",
     }),
     new BundleAnalyzerPlugin({
-      analyzerMode:"static", // the report outputs to an HTML file in the dist folder.
-    })
+      analyzerMode: "static", // the report outputs to an HTML file in the dist folder.
+    }),
   ],
   mode: "development",
 };
