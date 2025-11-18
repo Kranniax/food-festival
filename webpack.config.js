@@ -38,6 +38,19 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    static: [
+      {
+        directory: path.join(__dirname),
+        watch: true,
+      },
+    ],
+    compress: true,
+    port: 8080,
+    open: true,
+    hot: true,
+    watchFiles: ["*.html", "assets/**/*"],
+  },
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
