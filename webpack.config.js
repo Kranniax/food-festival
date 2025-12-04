@@ -67,7 +67,7 @@ module.exports = {
       start_url: "../index.html",
       background_color: "#01579b",
       theme_color: "#ffffff",
-      fingerprints: "false",
+      fingerprints: false,
       inject: false,
       icons: [
         {
