@@ -64,7 +64,7 @@ module.exports = {
       name: "Food Event",
       short_name: "Foodies",
       description: "An app that allows you to view upcomming food events.",
-      start_url: "../index.html",
+      start_url: "./index.html",
       background_color: "#01579b",
       theme_color: "#ffffff",
       fingerprints: false,

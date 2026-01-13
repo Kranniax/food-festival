@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "baseline-browser-mapping": "^2.9.12",
     "file-loader": "^6.2.0",
     "webpack": "^5.102.1",
     "webpack-bundle-analyzer": "^4.10.2",
